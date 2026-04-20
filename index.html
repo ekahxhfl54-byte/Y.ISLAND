@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <!-- 브라우저 뷰포트 너비를 1360px로 고정하여 페이지를 그리도록 설정 -->
+    <title>Y:ISLAND</title>
+
+    <!-- 웹폰트 연결 -->
+    <!-- font-family: "Pretendard Variable", Pretendard, sans-serif; -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- 외부 css 연결 -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header_visual">
+
+            <div id="header">
+                <div class="inner_header">
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="./image/mian/logo.svg" alt="logo">
+                        </a>
+                    </h1>
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">코스여행</a>
+
+                            <!-- submenu -->
+                            <div class="submenu bg">
+                                <ul class="inner_submenu">
+                                    <li><a href="#"><span>테마별 추천코스</span></a>
+                                        <ul>
+                                            <li><a href="#">힐링여행</a></li>
+                                            <li><a href="#">포토여행</a></li>
+                                            <li><a href="#">해양역사여행</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li><a href="#"><span>동행자별 추천코스</span></a>
+                                        <ul>
+                                            <li><a href="#">부모와 함께</a></li>
+                                            <li><a href="#">아이와 함께</a></li>
+                                            <li><a href="#">연인끼리</a></li>
+                                            <li><a href="#">친구끼리</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="#"><span>관광명소 추천코스</span></a>
+                                        <ul>
+                                            <li><a href="#">영도대교 코스</a></li>
+                                            <li><a href="#">흰여울 문화마을 코스</a></li>
+                                            <li><a href="#">태종대 코스</a></li>
+                                            <li><a href="#">해돋이마을 코스</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#">관광명소</a>
+
+                            <!-- submenu -->
+                            <div class="submenu bg">
+                                <ul class="inner_submenu">
+                                    <li><a href="#"><span>영도 8경</span></a>
+                                        <ul>
+                                            <li><a href="#">영도대교</a></li>
+                                            <li><a href="#">태종대</a></li>
+                                            <li><a href="#">절영해안산책로</a></li>
+                                            <li><a href="#">봉래산</a></li>
+                                            <li><a href="#">조도(아치섬)</a></li>
+                                            <li><a href="#">75광장</a></li>
+                                            <li><a href="#">동삼동 패총전시관</a></li>
+                                            <li><a href="#">감지해변산책로</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li><a href="#"><span>영도 핫플레이스</span></a>
+                                        <ul>
+                                            <li><a href="#">부모와 함께</a></li>
+                                            <li><a href="#">아이와 함께</a></li>
+                                            <li><a href="#">연인끼리</a></li>
+                                            <li><a href="#">친구끼리</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="#"><span>레져/체험/캠핑</span></a>
+                                        <ul>
+                                            <li><a href="#">영도대교 코스</a></li>
+                                            <li><a href="#">흰여울 문화마을 코스</a></li>
+                                            <li><a href="#">태종대 코스</a></li>
+                                            <li><a href="#">해돋이마을 코스</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="#"><span>산/사찰/</span></a>
+                                        <ul>
+                                            <li><a href="#">영도대교 코스</a></li>
+                                            <li><a href="#">흰여울 문화마을 코스</a></li>
+                                            <li><a href="#">태종대 코스</a></li>
+                                            <li><a href="#">해돋이마을 코스</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ::after -->
+                        </li>
+                        <li>
+                            <a href="#">음식/숙소</a>
+                            <!-- ::after -->
+                        </li>
+                        <li>
+                            <a href="#">영도길잡이</a>
+                            <!-- ::after -->
+                        </li>
+                    </ul>
+
+                    <div class="header_bg"></div>
+                </div>
+            </div>
+            <!-- header -->
+
+            <!-- visual -->
+            <div id="visual">
+                <div class="inner_visual">
+                    <p class="text01">사람, 자연, 역사를 잇는 <br> 예굴과 도시의 섬</p>
+                    <p class="text02">영도</p>
+                </div>
+            </div>
+            <!-- visual -->
+
+
+        </div>
+        <!-- container1 -->
+        <div id="container1">
+            <div class="main_title">
+                <h2 class="container1_title">영도 <span>코스여행</span></h2>
+            </div>
+
+            <section class="course">
+                <div class="course_bg">
+                    <div class="bg"></div>
+                </div>
+                <div class="tab_cont">
+                    <div class="course_tab">
+                        <button type="button" class="course_m_btn"></button>
+                        <ul class="course_list">
+                            <li class="course_item n1">
+                                <button type="button">
+                                    <span class="course_name">테마별 추천코스</span>
+                                </button>
+                            </li>
+                            <li class="course_item n2">
+                                <button type="button">
+                                    <span class="course_name">동행자별 추천코스</span>
+                                </button>
+                            </li>
+                            <li class="course_item n3">
+                                <button type="button">
+                                    <span class="course_name">관광명소 추천코스</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="course_panel">
+                        <div class="course_list">
+                            <div class="course_item n1">
+                                <div class="course_btn">
+                                    <div class="btn_list">
+                                        <div class="btn_item">
+                                            <span class="btn_num">01</span>
+                                            <span class="btn_name">힐링여행</span>
+                                        </div>
+                                        <div class="btn_item">
+                                            <span class="btn_num">02</span>
+                                            <span class="btn_name">포토여행</span>
+                                        </div>
+                                        <div class="btn_item">
+                                            <span class="btn_num">03</span>
+                                            <span class="btn_name">해양역사여행</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="course_img">
+                                    <div class="img_list">
+                                        <div class="img_item">
+                                            <a href="#">
+                                                <span class="img_m_name">힐링여행</span>
+                                                <span class="img">
+                                                    <img src="./image/container1/them01.png"
+                                                        alt="힐링 이미지" class="img_on">
+                                                    <img src="./image/container1/them01_mini.png" 
+                                                         alt="힐링 이미지" class="img_off">
+                                                    </span>
+                                            </a>
+                                        </div>
+                                        <div class="img_item">
+                                            <a href="#">
+                                                <span class="img_m_name">포토여행</span>
+                                                <span class="img">
+                                                    <img src="./image/container1/them02.png"
+                                                        alt="포토여행 이미지" class="img_on">
+                                                    <img src="./image/container1/them02-mini.png"
+                                                         alt="포토여행 이미지" class="img_off">
+                                                    </span>
+                                            </a>
+                                        </div>
+                                        <div class="img_item">
+                                            <a href="#">
+                                                <span class="img_m_name">해양역사여행</span>
+                                                <span class="img">
+                                                    <img src="./image/container1/them03.png"
+                                                        alt="해양역사여행 이미지" class="img_on">
+                                                    <img src="./image/container1/them03_mini.png"
+                                                         alt="해양역사여행 이미지" class="img_off">
+                                                    </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img_control">
+                                        <button type="button" class="img_prev"></button>
+                                        <button type="button" class="img_next"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course_item n2">
+                                <div class="course_btn">
+                                    <div class="btn_list">
+                                        <div class="btn_item">
+                                            <span class="btn_num">01</span>
+                                            <span class="btn_name">부모와 함께</span>
+                                        </div>
+                                        <div class="btn_item">
+                                            <span class="btn_num">02</span>
+                                            <span class="btn_name">아이와 함께</span>
+                                        </div>
+                                        <div class="btn_item">
+                                            <span class="btn_num">03</span>
+                                            <span class="btn_name">연인끼리</span>
+                                        </div>
+                                        <div class="btn_item">
+                                            <span class="btn_num">04</span>
+                                            <span class="btn_name">친구끼리</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="course_img">
+                                    <div class="img_list">
+                                        <div class="img_item">
+                                            <a href="#">
+                                                <span class="img_m_name">부모와 함께</span>
+                                                <span class="img">
+                                                    <img src="./image/container1/partner01.png"
+                                                        alt="부모와 함께 이미지" class="img_on">
+                                                    <img src="./image/container1/partner01-mini.png"
+                                                         alt="부모와 함께 이미지" class="img_off">
+                                                    </span>
+                                            </a>
+                                        </div>
+                                        <div class="img_item">
+                                            <a href="#">
+                                                <span class="img_m_name">아이와 함께</span>
+                                                <span class="img">
+                                                    <img src="./image/container1/partner02.png"
+                                                        alt="아이와 함께 이미지" class="img_on">
+                                                    <img src="./image/container1/partner02-mini.png"
+                                                         alt="부모와 함께 이미지" class="img_off">
+                                                    </span>
+                                            </a>
+                                        </div>
+                                        <div class="img_item">
+                                            <a href="#">
+                                                <span class="img_m_name">연인끼리</span>
+                                                <span class="img">
+                                                    <img src="./image/container1/partner03.png"
+                                                        alt="연인끼리 이미지" class="img_on">
+                                                    <img src="./image/container1/partner03-mini.png"
+                                                         alt="부모와 함께 이미지" class="img_off">
+                                                    </span>
+                                            </a>
+                                        </div>
+                                        <div class="img_item">
+                                            <a href="#">
+                                                <span class="img_m_name">친구끼리</span>
+                                                <span class="img">
+                                                    <img src="./image/container1/partner04.png"
+                                                        alt="친구끼리 이미지">
+                                                    <img src="./image/container1/partner04-mini.png"
+                                                         alt="부모와 함께 이미지" class="img_off">
+                                                    </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img_control">
+                                        <button type="button" class="img_prev">이전</button>
+                                        <button type="button" class="img_next">다음</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course_item n3">
+                                <div class="course_btn">
+                                    <div class="btn_list">
+                                        <div class="btn_item">
+                                            <span class="btn_num">01</span>
+                                            <span class="btn_name">영도대교 코스</span>
+                                        </div>
+                                        <div class="btn_item">
+                                            <span class="btn_num">02</span>
+                                            <span class="btn_name">흰여울 문화마을 코스</span>
+                                        </div>
+                                        <div class="btn_item">
+                                            <span class="btn_num">03</span>
+                                            <span class="btn_name">태종대 코스</span>
+                                        </div>
+                                        <div class="btn_item">
+                                            <span class="btn_num">04</span>
+                                            <span class="btn_name">해돋이마을 코스</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="course_img">
+                                    <div class="img_list">
+                                        <div class="img_item">
+                                            <a href="#">
+                                                <span class="img_m_name">영도대교 코스</span>
+                                                <span class="img">
+                                                    <img src="./image/container1/attraction01.png"
+                                                        alt="영도대교 코스 이미지" class="img_on">
+                                                    <img src="./image/container1/attraction01-mini.png"
+                                                         alt="부모와 함께 이미지" class="img_off">
+                                                    </span>
+                                            </a>
+                                        </div>
+                                        <div class="img_item">
+                                            <a href="#">
+                                                <span class="img_m_name">흰여울 문화마을 코스</span>
+                                                <span class="img">
+                                                    <img src="./image/container1/attraction02.png"
+                                                        alt="흰여울 문화마을 코스 이미지" class="img_on">
+                                                    <img src="./image/container1/attraction02-mini.png"
+                                                         alt="부모와 함께 이미지" class="img_off">
+                                                    </span>
+                                            </a>
+                                        </div>
+                                        <div class="img_item">
+                                            <a href="#">
+                                                <span class="img_m_name">태종대 코스</span>
+                                                <span class="img">
+                                                    <img src="./image/container1/attraction03.png"
+                                                        alt="태종대 코스 이미지" class="img_on">
+                                                    <img src="./image/container1/attraction03-mini.png"
+                                                         alt="부모와 함께 이미지" class="img_off">
+                                                    </span>
+                                            </a>
+                                        </div>
+                                        <div class="img_item">
+                                            <a href="#">
+                                                <span class="img_m_name">해돋이마을 코스</span>
+                                                <span class="img">
+                                                    <img src="./image/container1/attraction04.png"
+                                                        alt="해돋이마을 코스 이미지" class="img_on">
+                                                    <img src="./image/container1/attraction01-mini.png"
+                                                         alt="부모와 함께 이미지" class="img_off">
+                                                    </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img_control">
+                                        <button type="button" class="img_prev"></button>
+                                        <button type="button" class="img_next"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="course_ch"></div>
+        </div>
+        <!-- container1 -->
+
+        <!-- container2 -->
+        <div id="container2">
+            <div class="guide_wrap">
+                <!-- 왼쪽 영역 -->
+                <div class="guide-section">
+                    <h2 class="guide_title">영도 <span>가이드</span></h2>
+
+                    <div class="guide">
+                        <div class="guide-item">
+                            <!-- 기본 이미지 -->
+                            <img src="./image/container2/icon/관광안내책자 신청.png" class="default-img" alt="기본 관광안내책자 신청">
+                            <!-- 호버 이미지 -->
+                            <img src="./image/container2/icon/호버_관광안내책자 신청.png" class="hover-img" alt="호버_관광안내책자 신청">
+                        </div>
+                        <div class="guide-item">
+                            <!-- 기본 이미지 -->
+                            <img src="./image/container2/icon/문화관광해설사 신청.png" class="default-img" alt="기본 문화관광해설사 신청">
+                            <!-- 호버 이미지 -->
+                            <img src="./image/container2/icon/호버_문화관광해설사 신청.png" class="hover-img" alt="호버_문화관광해설사 신청">
+                        </div>
+                        <div class="guide-item">
+                            <!-- 기본 이미지 -->
+                            <img src="./image/container2/icon/교통정보.png" class="default-img" alt="기본 교통정보">
+                            <!-- 호버 이미지 -->
+                            <img src="./image/container2/icon/호버_교통정보.png" class="hover-img" alt="호버_교통정보">
+                        </div>
+                    </div>
+
+                    <div class="bottom-card-grid">
+                        <!-- 카드 1: 영도 체험/레저 (글자, 텍스트, 화살표가 한 장의 이미지에 포함됨) -->
+                        <div class="info-card">
+                            <!-- 실제 구현 시 '영도 체험/레저' 글자가 박힌 이미지를 넣으면 됩니다 -->
+                            <img src="./image/container2/체험, 레져.png" alt="영도 체험 레저 이미지">
+                        </div>
+
+                        <!-- 카드 2: 스탬프 투어 (글자, 텍스트, 화살표가 한 장의 이미지에 포함됨) -->
+                        <div class="info-card">
+                            <!-- 실제 구현 시 '스탬프 투어' 글자가 박힌 이미지를 넣으면 됩니다 -->
+                            <img src="./image/container2/스탬프 투어.png" alt="스탬프 투어 이미지">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 오른쪽 영역 -->
+                <div class="movie-section">
+                    <h2 class="movie_title">영도 <span>MOVIE</span></h2>
+                    <div class="status-badge">
+                        <img src="./image/container2/상영 중.png" alt="상영 중">
+                    </div>
+
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+
+                                <div class="movie-unit">
+                                    <!-- 영화 포스터 이미지 -->
+                                    <img src="./image/container2/movie_poster1.png" class="poster-img" alt="영화 포스터1">
+                                </div>
+                            </div>
+                            <!-- Slide 1 -->
+
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+
+                                <div class="movie-unit">
+                                    <!-- 영화 포스터 이미지 -->
+                                    <img src="./image/container2/movie_poster2.png" class="poster-img" alt="영화 포스터2">
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+
+                                <div class="movie-unit">
+                                    <!-- 영화 포스터 이미지 -->
+                                    <img src="./image/container2/movie_poster3.png" class="poster-img" alt="영화 포스터1">
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide_ch01"> </div>
+            <div class="guide_ch02"> </div>
+        </div>
+        <!-- container2 -->
+
+        <!-- container3 -->
+        <div id="container3">
+            <div class="festivities">
+                <h2 class="main_title4">영도 <span>페스티벌</span></h2>
+
+                <div class="festivities_img">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="festivities-unit">
+                                    <img src="./image/container3/영도다리축제_배너.png" class="poster-img" alt="영도다리 축제">
+                                </div>
+                            </div>
+                            <!-- Slide 1 -->
+
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="festivities-unit">
+                                    <img src="./image/container3/영도다리축제_배너.png" class="poster-img" alt="영도다리 축제">
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="festivities-unit">
+                                    <img src="./image/container3/영도다리축제_배너.png" class="poster-img" alt="영도다리 축제">
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="festivities_ch01"></div>
+            <div class="festivities_ch02"></div>
+        </div>
+        <!-- container3 -->
+
+        <!-- container4, container5 -->
+        <div id="container_wrap">
+
+            <!-- container4 -->
+            <div id="container4">
+                <h2 class="main_title5">영도 <span>카페 BEST7</span></h2>
+
+                <div class="cafe_img">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide best_cafe">
+                                <img src="./image/container4/카페 배너-1.png" alt="카페1" class="cafe_banner">
+
+                                <div class="cafe_txt">
+                                    <p class="cafe_name">젬스톤</p>
+                                    <ul>
+                                        <li>
+                                            <img src="./image/container4/시간_아이콘.png" alt="시간">
+                                            <p>매일 10:30 ~ 23:30</p>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <img src="./image/container4/장소_아이콘.png" alt="장소">
+                                            <p>부산 영도구 대교로 6번길 33</p>
+                                        </li>
+                                    </ul>
+                                    <p class="cafe_review">오래된 수영장을 개조하여
+                                        <br>
+                                        레트로 감성 물씬 카페로!
+                                    </p>
+                                    <a href="#" class="btn_cafe">자세히 보기</a>
+                                </div>
+                            </div>
+                            <!-- Slide 1 -->
+
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide best_cafe">
+                                <img src="./image/container4/카페 배너-2.png" alt="카페2" class="cafe_banner">
+
+                                <div class="cafe_txt">
+                                    <p class="cafe_name">블루빈</p>
+                                    <ul>
+                                        <li>
+                                            <img src="./image/container4/시간_아이콘.png" alt="시간">
+                                            <p>매일 08:30 ~ 21:00</p>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <img src="./image/container4/장소_아이콘.png" alt="장소">
+                                            <p>부산 영도구 전망로 태종대 2층</p>
+                                        </li>
+                                    </ul>
+                                    <p class="cafe_review">멋진 태종대 전망대에서 보는
+                                        <br>
+                                        멋진 바다가 있는 카페
+                                    </p>
+                                    <a href="#" class="btn_cafe">자세히 보기</a>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide best_cafe">
+                                <img src="./image/container4/카페 배너-3.png" alt="카페3" class="cafe_banner">
+
+                                <div class="cafe_txt">
+                                    <p class="cafe_name">신기숲</p>
+                                    <ul>
+                                        <li>
+                                            <img src="./image/container4/시간_아이콘.png" alt="시간">
+                                            <p>매일 12:00 ~ 23:00</p>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <img src="./image/container4/장소_아이콘.png" alt="장소">
+                                            <p>부산 영도구 와치로 65</p>
+                                        </li>
+                                    </ul>
+                                    <p class="cafe_review">멋진 통창 하나로
+                                        <br>
+                                        단숨에 갤러리 분위기 물씬!
+                                    </p>
+                                    <a href="#" class="btn_cafe">자세히 보기</a>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide best_cafe">
+                                <img src="./image/container4/카페 배너-4.png" alt="카페4" class="cafe_banner">
+
+                                <div class="cafe_txt">
+                                    <p class="cafe_name">여울책장</p>
+                                    <ul>
+                                        <li>
+                                            <img src="./image/container4/시간_아이콘.png" alt="시간">
+                                            <p>매일 10:00 ~ 19:00</p>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <img src="./image/container4/장소_아이콘.png" alt="장소">
+                                            <p>부산 영도구 흰여울길 381 여울책장</p>
+                                        </li>
+                                    </ul>
+                                    <p class="cafe_review">멋진 통창 하나로
+                                        <br>
+                                        단숨에 갤러리 분위기 물씬!
+                                    </p>
+                                    <a href="#" class="btn_cafe">자세히 보기</a>
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+
+                            <!-- Slide 5 -->
+                            <div class="swiper-slide best_cafe">
+                                <img src="./image/container4/카페 배너-5.png" alt="카페5" class="cafe_banner">
+
+                                <div class="cafe_txt">
+                                    <p class="cafe_name">흰여울 비치</p>
+                                    <ul>
+                                        <li>
+                                            <img src="./image/container4/시간_아이콘.png" alt="시간">
+                                            <p>월~금 11:00~20:00(토요일은 21:30까지)</p>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <img src="./image/container4/장소_아이콘.png" alt="장소">
+                                            <p>부산 영도구 절영로 236</p>
+                                        </li>
+                                    </ul>
+                                    <p class="cafe_review">이곳은 영도가 아니라
+                                        <br>
+                                        감성 동남아 비치 그 어디쯤?!
+                                    </p>
+                                    <a href="#" class="btn_cafe">자세히 보기</a>
+                                </div>
+                            </div>
+                            <!-- Slide 5 -->
+
+                            <!-- Slide 6 -->
+                            <div class="swiper-slide best_cafe">
+                                <img src="./image/container4/카페 배너-6.png" alt="카페6" class="cafe_banner">
+
+                                <div class="cafe_txt">
+                                    <p class="cafe_name">카페 38.5</p>
+                                    <ul>
+                                        <li>
+                                            <img src="./image/container4/시간_아이콘.png" alt="시간">
+                                            <p>매일 10:00 ~ 22:00</p>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <img src="./image/container4/장소_아이콘.png" alt="장소">
+                                            <p>부산 영도구 태종로 539</p>
+                                        </li>
+                                    </ul>
+                                    <p class="cafe_review">구멍 숭숭 연탄 빵은 이색적!
+                                        <br>
+                                        탁 트인 영도 북항 뷰 매력적!
+                                    </p>
+                                    <a href="#" class="btn_cafe">자세히 보기</a>
+                                </div>
+                            </div>
+                            <!-- Slide 6 -->
+
+                            <!-- Slide 7 -->
+                            <div class="swiper-slide best_cafe">
+                                <img src="./image/container4/카페 배너-7.png" alt="카페7" class="cafe_banner">
+                                
+                                <div class="cafe_txt">
+                                    <p class="cafe_name">피아크</p>
+                                    <ul>
+                                        <li>
+                                            <img src="./image/container4/시간_아이콘.png" alt="시간">
+                                            <p>매일 10:00 ~ 23:00</p>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <img src="./image/container4/장소_아이콘.png" alt="장소">
+                                            <p>부산 영도구 해양로195번길 180 피아크</p>
+                                        </li>
+                                    </ul>
+                                    <p class="cafe_review">조선소 빈 땅에 크루즈 본뜬 6층 건물과
+                                        <br>
+                                        탁 트인 북항 뷰가 매력적인 카페
+                                    </p>
+                                    <a href="#" class="btn_cafe">자세히 보기</a>
+                                </div>
+                            </div>
+                            <!-- Slide 7 -->
+
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- container4 -->
+
+            <!-- container5 -->
+            <div id="container5">
+                <h2 class="main_title6"><span>Smart</span> 영도</h2>
+
+                <div class="smart_wrap">
+
+                    <div class="smart">
+                        <div class="smart-item">
+                            <!-- 기본 이미지 -->
+                            <img src="./image/container5/관광안내소.png" class="default-img" alt="기본 관광안내소">
+                            <!-- 호버 이미지 -->
+                            <img src="./image/container5/관광안내소2.png" class="hover-img" alt="호버_관광안내소">
+                        </div>
+                        <div class="smart-item">
+                            <!-- 기본 이미지 -->
+                            <img src="./image/container5/영도 맛집.png" class="default-img" alt="기본 맛집">
+                            <!-- 호버 이미지 -->
+                            <img src="./image/container5/영도 맛집2.png" class="hover-img" alt="호버_맛집">
+                        </div>
+                        <div class="smart-item">
+                            <!-- 기본 이미지 -->
+                            <img src="./image/container5/영도 숙박.png" class="default-img" alt="기본 숙박">
+                            <!-- 호버 이미지 -->
+                            <img src="./image/container5/영도 숙박2.png" class="hover-img" alt="호버_숙박">
+                        </div>
+                        <div class="smart-item">
+                            <!-- 기본 이미지 -->
+                            <img src="./image/container5/관광안내도.png" class="default-img" alt="기본 관광안내도">
+                            <!-- 호버 이미지 -->
+                            <img src="./image/container5/관광안내도2.png" class="hover-img" alt="호버_관광안내도">
+                        </div>
+                        <div class="smart-item">
+                            <!-- 기본 이미지 -->
+                            <img src="./image/container5/캠핑장.png" class="default-img" alt="기본 캠핑장">
+                            <!-- 호버 이미지 -->
+                            <img src="./image/container5/캠핑장2.png" class="hover-img" alt="호버_캠핑장">
+                        </div>
+                    </div>
+                </div>
+                <div class="smart_box">
+                    <div class="news">
+                        <!-- <img src="./image/container5/영도소식.png" alt="영도소식"> -->
+                        <div class="news_top">
+                            <h3 class="news_title">영도소식</h3>
+                            <button class="news_box"><p><a href="#">더보기</a></p></button>
+                        </div>
+                        <div class="new_list">
+                            <p>2026년 행사안내 <span>2026-00-00</span></p>
+                            <p>2026년 영도 한선 잇기 공모전 <span>2026-00-00</span></p>
+                            <p>2026년 개별 관광객 인센티브 지원안내 <span>2026-00-00</span></p>
+                        </div>
+                    </div>
+
+                    <div class="drone">
+                        <a href=""><img src="./image/container5/영도드론2.png" alt="영도드론"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container5 -->
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="inner_footer">
+                <div class="footer_top">
+                    <ul class="footer_sns">
+                        <li>
+                            <a href="#">
+                                <img src="./image/footer/페이스북_로고.png" alt="페이스북">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="./image/footer/블로그_로고.png" alt="네이버 블로그">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="./image/footer/인스타_로고.png" alt="인스타">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="./image/footer/유튜브_로고.png" alt="유튜브">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer_link">
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_bottom">
+                    <div class="footer_logo">
+                        <img src="./image/footer/footer_logo.png" alt="footer_logo">
+                    </div>
+                    <div class="footer_text">
+                        <p>TEL. 051-416-0145</p>
+                        <p>FAX. 051-416-0000</p>
+                        <p>부산광역시 영도구 000 000 00</p>
+                    </div>
+                </div>
+                <div class="footer_text2">
+                    <p>COPYRIGHT (C) 2026 BY YEONGDO-GU. ALL RIGHT RESERVED.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- footer -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 3, // 한 화면에 보이는 슬라이드 수
+            slidesPerGroup: 1, // 한 번에 이동할 슬라이드 수 (1로 설정)
+            spaceBetween: 60,
+            loop: false, // 루프 비활성화
+            freeMode: false, // 스냅 활성화 (freeMode 비활성화)
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                draggable: true,
+                dragSize: 50, // 드래그 핸들 크기 고정
+                hide: false,
+            },
+        });
+    </script>
+
+</body>
+
+</html>
