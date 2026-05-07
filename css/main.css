@@ -67,6 +67,7 @@ button {
 body {
     font-family: "Pretendard Variable", Pretendard, sans-serif;
     font-size: 14px;
+    font-weight: 500;
     line-height: 1.5;
     color: #111;
     /* overflow-x: hidden; */
@@ -76,6 +77,7 @@ body {
     min-width: 1360px;
     margin: 0 auto;
     background-color: #f1f1f1;
+    overflow: hidden;
 }
 
 /* 애니메이션 만들기 */
@@ -118,11 +120,32 @@ body {
     background: linear-gradient(to bottom, rgba(50, 50, 50, 0.9) 0%, rgba(100, 100, 100, 0.4) 75%, transparent 100%);
     border-bottom: 1px solid #f1f1f1;
 }
-
+/* 추가 */
+#header.active {
+    position: relative;
+}
+#header.active::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #111;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 6;
+}
 .inner_header {
     height: 120px;
     display: flex;
     position: relative;
+
+    /* 추가 */
+    width: 1800px;
+    margin: 0 auto;
+    padding-top: 28px;
+    box-sizing: border-box;
+    gap: 50px;
 }
 .header_bg {
     background-color: #f1f1f1;
@@ -137,13 +160,17 @@ body {
 
     z-index: 5;
 }
-.inner_header.active .header_bg {
+#header.active .header_bg {
     opacity: 1;
+    
 }
+
 .logo {
     width: 246px;
-    margin: 26px 50px;
-    padding-right: 254px;
+    z-index: 99;
+
+    /* 추가 */
+    padding-left: 40px;
 }
 
 .logo img {
@@ -154,20 +181,23 @@ body {
 .gnb {
     display: flex;
     z-index: 6;
-}
 
+    /* 추가 */
+    margin-left: 170px;
+}
 .gnb > li > a {
     display: block;
-    margin-top: 50px;
-    padding-right: 150px;
+    margin-top: 20px;
+    padding: 0 68px 38px;
     color: #f1f1f1;
     font-size: 24px;
     font-weight: 600;
+    white-space: nowrap;
 }
-.inner_header.active .gnb > li > a {
+#header.active .gnb > li > a {
     color: #111;
 }
-.inner_header .gnb li:hover > a {
+#header .gnb li:hover > a {
     color: #F26322;
 }
 
@@ -188,9 +218,6 @@ body {
     opacity: 0;
 
     transition: height 0.3s ease, opacity 0.2s;
-}
-.gnb > li.active .submenu {
-    opacity: 1;
 }
 .inner_submenu {
     display: flex;
@@ -262,17 +289,18 @@ body {
     height: 200px;
     background: url(../image/container1/영냥이-관광.png) center no-repeat;
     position: absolute;
-    top: 800px;
-    left: 500px; 
+    top: 490px;
+    left: 200px; 
     z-index: 99;
 }
 .container1_title {
+    width: 1320px;
+    margin: 0 auto;
     font-family: 'Yeongdo';
     font-size: 36px;
     font-weight: 700;
     color: #111;
     padding-top: 255px;
-    margin-left: 300px;
 }
 
 .container1_title span {
@@ -863,7 +891,7 @@ body {
 }
 
 .guide-section {
-    width: 50%;
+    width: 55%;
 }
 
 .guide_title {
@@ -877,9 +905,6 @@ body {
     color: #F26322;
 }
 
-.guide-section {
-    width: 55%;
-}
 
 .guide {
     display: flex;
@@ -1011,17 +1036,17 @@ body {
     height: 165px;
     background: url(../image/container2/절영이\ 관광인솔.png) center no-repeat;
     position: absolute;
-    top: 366px;
-    left: 160px; 
+    top: 400px;
+    left: 150px; 
     z-index: 99;
 }
 .guide_ch02 {
     width: 250px;
-    height: 300px;
+    height: 280px;
     background: url(../image/container2/동백이\ 영화관람2.png) center no-repeat;
     position: absolute;
-    top: 700px;
-    right: 150px;
+    top: 710px;
+    right: -110px;
     z-index: 99;
 }
 /* ------------------  container3  ---------------- */
@@ -1073,7 +1098,7 @@ body {
 
 .festivities_img {
     width: 100%;
-    height: 100%px;
+    height: 370px;
     margin: 0 auto;
     padding-top: 47px;
     align-items: center;
@@ -1435,6 +1460,9 @@ body {
 .footer_bottom {
     display: flex;
     justify-content: space-between;
+    
+}
+.footer_logo {
     padding-top: 50px;
 }
 .footer_text {
