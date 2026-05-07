@@ -1,16 +1,19 @@
-$(document).ready(function () {
-  $('.gnb').hover(
-        function () {
-            $('.inner_header').addClass('active');
-        },
-        function () {
-            $('.inner_header').removeClass('active');
-        }
-    );
-});
+// $(document).ready(function () {
+//   $('.gnb').hover(
+//         function () {
+//             $('.inner_header').addClass('active');
+//         },
+//         function () {
+//             $('.inner_header').removeClass('active');
+//         }
+//     );
+// });
+
+
+
 
 // header event
-const header = document.querySelector(".inner_header"); // 헤더 전체 영역 (hover 상태 관리용)
+const header = document.querySelector("#header"); // 헤더 전체 영역 (hover 상태 관리용)
 const menuItems = document.querySelectorAll(".gnb > li"); // 상단 메뉴 각각 (li)
 const bg = document.querySelector(".header_bg"); // 서브메뉴 배경 영역 (회색 박스)
 
@@ -41,6 +44,11 @@ menuItems.forEach((item) => {
 
       // 헤더에 active 클래스 추가 (텍스트 색상 변경 등)
       header.classList.add("active");
+    } else {
+        //  추가 (핵심)
+            bg.style.height = "0px";
+            bg.style.opacity = 0;
+            header.classList.remove("active");
     }
   });
 
@@ -70,7 +78,7 @@ menuItems.forEach((item) => {
 
 // header 벗어나면 닫기
 header.addEventListener('mouseleave', () => {
-    gnbItems.forEach(li => {
+    menuItems.forEach(li => {
         li.classList.remove('active');
         const sub = li.querySelector('.submenu');
         if (sub) sub.style.height = '0px';
