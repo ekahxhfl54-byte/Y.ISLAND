@@ -1,0 +1,485 @@
+@charset "utf-8";
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background-color: transparent; /* background-color는 none 말고 transparent(투명하게) */
+}
+
+/* 기본 꾸미기 */
+body {
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #111;
+    /* overflow-x: hidden; */
+}
+
+#wrap {
+    min-width: 1360px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.header_visual {
+    width: 100%;
+    height: 605px;
+    background-image: url(../image/submenu04/visual/visual_img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ------------------  header  ---------------- */
+#header {
+    background: linear-gradient(to bottom, rgba(50, 50, 50, 0.9) 0%, rgba(100, 100, 100, 0.4) 75%, transparent 100%);
+    border-bottom: 1px solid #f1f1f1;
+}
+/* 추가 */
+#header.active {
+    position: relative;
+}
+#header.active::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #111;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 6;
+}
+.inner_header {
+    height: 120px;
+    display: flex;
+    position: relative;
+
+    /* 추가 */
+    width: 1800px;
+    margin: 0 auto;
+    padding-top: 28px;
+    box-sizing: border-box;
+    gap: 50px;
+}
+.header_bg {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 5;
+}
+#header.active .header_bg {
+    opacity: 1;
+    
+}
+
+.logo {
+    width: 246px;
+    z-index: 99;
+
+    /* 추가 */
+    padding-left: 40px;
+}
+
+.logo img {
+    width: 100%;
+    display: block;
+}
+
+.gnb {
+    display: flex;
+    z-index: 6;
+
+    /* 추가 */
+    margin-left: 170px;
+}
+.gnb > li > a {
+    display: block;
+    margin-top: 20px;
+    padding: 0 68px 38px;
+    color: #f1f1f1;
+    font-size: 24px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+#header.active .gnb > li > a {
+    color: #111;
+}
+#header .gnb li:hover > a {
+    color: #F26322;
+}
+
+.gnb li:hover > a {
+    color: #F26322;
+}
+
+.submenu {
+    width: 100%;
+
+    position: absolute;
+    top: 120px;
+    left: 0;
+    z-index: 20;
+
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+
+    transition: height 0.3s ease, opacity 0.2s;
+}
+.inner_submenu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 150px;
+}
+.inner_submenu li {
+    margin-top: 20px;
+}
+.inner_submenu li a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+    margin: 0 auto;
+}
+.inner_submenu li:first-child::before {
+    display: none;
+}
+
+.inner_submenu li a span{
+    font-size: 20px;
+    border-bottom: 2px solid #111;
+}
+/* .inner_submenu  li > a > span:hover {
+    border-bottom: 2px solid #F26322;
+} */
+.inner_submenu  li:hover a  span {
+    border-bottom: 2px solid #F26322;
+}
+.inner_submenu li a:hover{
+    color: #F26322;
+}
+
+/* ------------------ visual  ------------------ */
+.inner_visual {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.visual_text {
+    font-family: 'Yeongdo';
+    font-size: 80px;
+    font-weight: 700;
+    color: #f1f1f1;
+    margin: 110px 0 50px;
+    text-shadow: 0 2px 5px #111;
+}
+
+.visual_button {
+    width: 1320px;
+    height: 130px;
+    margin: 0 auto;
+    display: flex;
+
+    position: relative;
+}
+.visual_section {
+    width: 100%;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+.button_item {
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+
+    position: relative;
+}
+.button_item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.button_item .hover-img {
+    opacity: 0;
+    /* 평소에는 숨김 */
+}
+/* --- 호버 인터랙션 정의 --- */
+/* 1. 마우스를 올리면 기본 이미지는 사라짐 */
+.button_item:hover .default-img {
+    opacity: 0;
+}
+
+/* 2. 마우스를 올리면 호버용 이미지가 나타남 */
+.button_item:hover .hover-img,
+.button_item.active .hover-img {
+    opacity:1
+}
+
+#container {
+    width: 100%;
+    height: 3000px;
+    margin: 0 auto;
+    background: url(../image/submenu04/footer/footer_img2.png) no-repeat center bottom, linear-gradient(to bottom, #f1f1f1 10%, #B2E2F2);
+    position: relative;
+}
+
+/* ------------------  container1  ---------------- */
+#container1 {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.map_title {
+    width: 1320px;
+    font-family: 'Yeongdo';
+    font-weight: 700;
+    font-size: 48px;
+    color: #17479E;
+    display: flex;
+    margin: 115px auto;
+    align-items: center;
+    text-align: center;
+}
+
+.map_ch01 {
+    position: absolute;
+    top: -30px;
+    right: 250px;
+}
+.map_ch01 img {
+    width: 200px;
+    height: 214px;
+}
+
+.map_ch02 {
+    position: absolute;
+    top: 950px;
+    left: 180px;
+}
+.map_ch02 img {
+    width: 200px;
+    height: 208px;
+}
+
+.map_ch03 {
+    position: absolute;
+    top: 1860px;
+    left: 450px;
+}
+.map_ch03 img {
+    width: 200px;
+    height: 214px;
+}
+.map {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+/* ------------------  container2  ---------------- */
+#container2 {
+    width: 100%;
+    margin: 100px auto;
+    position: relative;
+}
+
+.map_down01 {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.map_down02 {
+    width: 1320px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.map_button {
+    width: 260px;
+    height: 44px;
+    
+    position: relative;
+}
+.map_button img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map_button .hover-img {
+    opacity: 0;
+    /* 평소에는 숨김 */
+}
+/* --- 호버 인터랙션 정의 --- */
+/* 1. 마우스를 올리면 기본 이미지는 사라짐 */
+.map_button:hover .default-img {
+    opacity: 0;
+}
+
+/* 2. 마우스를 올리면 호버용 이미지가 나타남 */
+.map_button:hover .hover-img,
+.map_button.active .hover-img {
+    opacity:1
+}
+
+/* ------------------  footer  ---------------- */
+#footer {
+    height: 100%;
+    margin: 0 auto;
+    background-color: #3375BE;
+}
+
+.inner_footer {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 56px;
+}
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 50px;
+}
+.footer_sns {
+    display: flex;
+    gap: 16px;
+}
+.footer_link {
+    display: flex;
+    gap: 16px;
+    display: flex;
+}
+
+
+.footer_link li {
+    position: relative;
+    padding-left: 18px;
+}
+.footer_link li a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #f1f1f1;
+}
+
+.footer_link li::before {
+    display: block;
+    content: "";
+    width: 2px;
+    height: 36px;
+    background-color: #f1f1f1;
+
+    /* position 자식요소 */
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+.footer_link li:first-child::before {
+    display: none;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_logo {
+    padding-top: 50px;
+}
+.footer_text {
+    
+    font-size: 18px;
+    font-weight: 400;
+    color: #f1f1f1;
+    display: flex;
+    gap: 45px;
+    align-items: center; /* 세로 중앙 */
+    height: 100px;
+}
+.footer_text2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #f1f1f1;
+    text-align: end;
+    padding-bottom: 50px;
+
+}

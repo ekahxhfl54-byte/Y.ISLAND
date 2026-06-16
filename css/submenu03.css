@@ -83,7 +83,7 @@ body {
 .header_visual {
     width: 100%;
     height: 605px;
-    background-image: url(../image/submenu02/visual/visual_img.png);
+    background-image: url(../image/submenu03/visual/visual_img.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -224,6 +224,7 @@ body {
 .inner_submenu li a:hover{
     color: #F26322;
 }
+
 /* ------------------ visual  ------------------ */
 .inner_visual {
     width: 1320px;
@@ -289,404 +290,347 @@ body {
     opacity:1
 }
 
+#container {
+    width: 100%;
+    height: 5600px;
+    margin: 0 auto;
+    background: url(../image/submenu03/footer/footer\ 꾸미기2.png) no-repeat center bottom, linear-gradient(to bottom, #f1f1f1 10%, #B2E2F2);
+    position: relative;
+}
 /* ------------------  container1  ---------------- */
 #container1 {
     width: 100%;
-    height: 520px;
-    margin: 0 auto;
-    background-color: #B2E2F2;
-    border-radius: 0 0 100px 100px;
-    display: flex;
-    justify-content: center;
+    margin: 150px auto;
+    position: relative;
 }
-.point {
-    width: 1320px;
-    margin: 0 auto;
+.restaurant_ch img {
+    width: 240px;
+    height: 253px;
 }
-.point_title {
+.restaurant_ch {
+    position: absolute;
+    top: -10px;
+    left: 220px;
+}
+.restaurant_title {
     width: 1320px;
     font-family: 'Yeongdo';
-    font-weight: 900;
-    font-size: 64px;
-    display: block;
+    font-weight: 700;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
     margin: 0 auto;
     padding-top: 110px;
     text-align: center;
 }
-.point_img {
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 40px;
+.restaurant_title span {
+    color: #E11F27;
+}
+.restaurant_title::before {
+    content: "";
+    flex-grow: 1;
+    margin: 0 87px 0 0;
+    background-color: #17479E;
+    height: 3px;
+    font-size: 0;
+    line-height: 0;
+}
+.restaurant_title::after {
+    content: "";
+    flex-grow: 1;
+    margin: 0 0 0 87px;
+    color: #17479E;
+    background-color: #17479E;
+    height: 3px;
+    font-size: 0;
+    line-height: 0;
+}
+.restaurant_sub_title {
+    width: 1320px;
+    font-weight: 700;
+    font-size: 24px;
+    display: block;
     align-items: center;
-    display: flex;
-
-    position: relative;
-}
-.point-unit img {
-    border-radius: 20px;
-}
-.point .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-.point .swiper-slide {
+    margin: 35px auto 85px;
     text-align: center;
+}
+
+.restaurant {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+.restaurant_list01 {
+    width: 1320px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 30px;
 }
-
-.point .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* 버튼 수정하기 */
-.point .swiper-button-prev::after,
-.point .swiper-rtl .swiper-button-next::after {
-    content: url(../image/submenu02/container1/arrow_left.png);
-}
-.point .swiper-button-next::after,
-.point_img .swiper-rtl .swiper-button-prev::after {
-    content: url(../image/submenu02/container1/arrow_right.png);
-}
-
-/* 화살표 버튼 위치 수정 */
-.point .swiper-button-prev,
-.point .swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, -150px);
-}
-.point .swiper-button-next,
-.point .swiper-rtl .swiper-button-prev {
-    right: var(--swiper-navigation-sides-offset, -150px);
-}
-
-/* ------------------  container2  ---------------- */
-#container2 {
-    width: 100%;
-    height: 758px;
-    display: flex;
-}
-
-.view_wrap {
+.restaurant_list02 {
     width: 1320px;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.view_img {
+    margin: 85px auto;
     display: flex;
-    justify-content: space-between;
-    margin-top: 190px;
-}
-.view_img > img {
-    border-radius: 20px 50px 20px 20px;
-    box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.4);
-}
-.view_text {
-    width: 620px;
-    font-size: 24px;
-    font-weight: 700;
-    margin-top: 40px;
+    justify-content: center;
+    gap: 30px;
 }
 
-.view_text h2 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #17479E;
-    border-bottom: 3px solid #17479E;
-}
-.view_text p {
-    padding-top: 20px;
-}
-.icon01 {
-    font-size: 18px;
+.restaurant_button {
+    width: 348px;
+    height: 56px;
     display: flex;
-    gap: 10px;
-}
-.icon02 {
-    font-size: 18px;
-    display: flex;
-    gap: 10px;
-}
-.icon03 {
-    font-size: 18px;
-    display: flex;
-    gap: 10px;
-}
-
-/* ------------------  container3  ---------------- */
-#container3 {
-    width: 100%;
-    height: 758px;
-}
-
-.intro {
-    width: 1320px;
-    margin: 0 auto;
-}
-
-.intro_title {
-    display: flex;
-    gap: 15px;
-}
-.intro_title img {
-    width: 50px;
-    height: 40px;
-}
-
-.intro_title h2 {
-    width: 1320px;
-    font-size: 32px;
-    font-weight: 700;
-    border-bottom: 3px solid #17479E;
-    color: #17479E;
-}
-.intro_text {
-    width: 1320px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #111;
-}
-.intro_text01 {
-    
-    margin: 25px 0 0 60px;
-    line-height: 30px;
-    align-items: center;
-    display: flex;
-    gap: 18px;
-}
-.intro_text01 > img {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-.intro_text02 {
-    width: 1320px;
-    margin-top: 48px;
-    line-height: 30px;
-    display: flex;
-    justify-content: end;
-    gap: 18px;
-    text-align: right;
-
-}
-
-.intro_text02 img {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-/* ------------------  container4  ---------------- */
-#container4 {
-    width: 100%;
-    height: 230px;
-    margin-bottom: 300px;
-}
-.Directions {
-    width: 1320px;
-    margin: 0 auto;
-}
-.Directions_title {
-    margin-top: 55px;
-    display: flex;
-    gap: 15px;
-}
-.Directions_title img {
-    width: 50px;
-    height: 54px;
-}
-.Directions_title h2 {
-    width: 1320px;
-    font-size: 32px;
-    font-weight: 700;
-    border-bottom: 3px solid #17479E;
-    color: #17479E;
-}
-
-.Directions_list {
-    font-size: 16px;
-    font-weight: 500;
-    margin: 20px 0 0 60px;
-}
-.Directions_list img {
-    width: 140px;
-    height: 40px;
-}
-
-/* ------------------  container5  ---------------- */
-#container5 {
-    width: 100%;
-    height: 1648px;
-    margin-top: 200px;
-    background: url(../image/submenu02/footer/footer_img2.png) no-repeat center bottom, linear-gradient(to bottom, #f1f1f1 20%, #F26322);
+    justify-content: center;
     position: relative;
 }
-.data_ch {
-    width: 300px;
-    height: 275px;
-    background: url(../image/submenu02/container5/data_ch.png) no-repeat;
-    position: absolute;
-    top: -250px;
-    right: 350px;
-    z-index: 99;
-}
-
-.cont5_inner {
-    width: 1320px;
-    margin: 0 auto;
-    position: relative;
-}
-.title_box {
-    position: absolute;
-    top: -150px;
-    left: 45px;
-}
-.data_title {
-    color: #f1f1f1;
-    font-family: 'Yeongdo';
-    font-weight: 700;
-    font-size: 48px;
-    text-align: center;
-    padding: 58px 80px;
-    background-color: #F26322;
-    border-radius: 10px 50px 10px 50px;
-}
-
-.data {
-    width: 100%;
-    height: 1120px;
-    border: 2px solid #F26322;
-    border-radius: 0 10px 0 10px;
-    background-color: #f1f1f1;
-}
-
-
-.data_section {
-    width: 100%;
-    margin-top: 120px;
-}
-.data_button {
-    display: flex;
-    margin: 58px 0 0 60px;
-    gap: 15px;
-}
-.data_button_item {
-    width: 124px;
-    height: 42px;
-    cursor: pointer;
-    position: relative;
-}
-.data_button_item img {
+.restaurant_button img {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 480px;
     width: 100%;
     height: 100%;
     object-fit: contain;
     transition: opacity 0.3s ease;
 }
-.data_button_item .hover-img {
+
+.restaurant_button .hover-img {
     opacity: 0;
     /* 평소에는 숨김 */
 }
 /* --- 호버 인터랙션 정의 --- */
 /* 1. 마우스를 올리면 기본 이미지는 사라짐 */
-.data_button_item:hover .default-img {
+.restaurant_button:hover .default-img {
     opacity: 0;
 }
 
 /* 2. 마우스를 올리면 호버용 이미지가 나타남 */
-.data_button_item:hover .hover-img,
-.data_button_item.active .hover-img {
+.restaurant_button:hover .hover-img,
+.restaurant_button.active .hover-img {
     opacity:1
 }
 
-.food_data {
+/* ------------------  container2  ---------------- */
+#container2 {
     width: 100%;
-    height: 800px;
-    margin-top: 85px;
-    overflow-y: scroll;
-    display: flex;
-    justify-content: space-between;
+    margin: 150px auto;
+    position: relative;
 }
-.food_line01 {
-    margin-left: 20px;
-    
+
+.hotel_ch {
+    position: absolute;
+    top: -30px;
+    right: 180px;
 }
-.food_line02 {
-    margin-right: 20px;
+.hotel_ch img {
+    width: 181px;
+    height: 260px;
 }
-.food_img img {
-    border-radius: 20px 50px 20px 20px;
-}
-.food_text {
-    width: 345px;
-    font-size: 16px;
-    font-weight: 500;
-    margin-left: 15px;
-}
-.food_name {
-    font-size: 20px;
+
+.hotel_title {
+    width: 1320px;
+    font-family: 'Yeongdo';
     font-weight: 700;
+    font-size: 48px;
     display: flex;
-    border-bottom: 3px solid #F26322;
-}
-.food_name img {
-    width: 30px;
-    height: 30px;
-}
-.food_position {
-    display: flex;
-    margin: 15px 0;
-    gap: 10px;
-}
-.food_position img {
-    width: 20px;
-    height: 26px;
-}
-.food_type {
-    display: flex;
-    margin-bottom: 15px;
-    gap: 10px;
-}
-.food_type img {
-    width: 20px;
-    height: 20px;
-}
-.food_number {
-    display: flex;
-    margin-bottom: 15px;
-    gap: 10px;
-}
-.food_number img {
-    width: 20px;
-    height: 20px;
-}
-.food_time {
-    display: flex;
-    margin-bottom: 15px;
-    gap: 10px;
     align-items: center;
+    margin: 0 auto;
+    padding-top: 110px;
+    text-align: center;
 }
-.food_time img {
-    width: 20px;
-    height: 20px;
+.hotel_title span {
+    color: #F26322;
 }
-.food_list {
-    width: 610px;
-    height: 276px;
+.hotel_title::before {
+    content: "";
+    flex-grow: 1;
+    margin: 0 87px 0 0;
+    background-color: #17479E;
+    height: 3px;
+    font-size: 0;
+    line-height: 0;
+}
+.hotel_title::after {
+    content: "";
+    flex-grow: 1;
+    margin: 0 0 0 87px;
+    color: #17479E;
+    background-color: #17479E;
+    height: 3px;
+    font-size: 0;
+    line-height: 0;
+}
+.hotel_sub_title {
+    width: 1320px;
+    font-weight: 700;
+    font-size: 24px;
+    display: block;
+    align-items: center;
+    margin: 35px auto 85px;
+    text-align: center;
+}
+
+.hotel {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+.hotel_list01 {
+    width: 1320px;
+    margin: 0 auto;
     display: flex;
-    margin-bottom: 50px;
+    justify-content: center;
+    gap: 30px;
 }
-.food_list01 {
+.hotel_list02 {
+    width: 1320px;
+    margin: 85px auto;
     display: flex;
-    margin-bottom: 50px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hotelt_button {
+    width: 348px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.hotelt_button img {
+    position: absolute;
+    top: 0;
+    left: 480px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.hotelt_button .hover-img {
+    opacity: 0;
+    /* 평소에는 숨김 */
+}
+/* --- 호버 인터랙션 정의 --- */
+/* 1. 마우스를 올리면 기본 이미지는 사라짐 */
+.hotelt_button:hover .default-img {
+    opacity: 0;
+}
+
+/* 2. 마우스를 올리면 호버용 이미지가 나타남 */
+.hotelt_button:hover .hover-img,
+.hotelt_button.active .hover-img {
+    opacity:1
+}
+
+/* ------------------  container2  ---------------- */
+#container3 {
+    width: 100%;
+    margin: 150px auto;
+    position: relative;
+}
+
+.cafe_ch {
+    position: absolute;
+    top: 0;
+    left: 180px;
+}
+.cafe_ch img {
+    width: 240px;
+    height: 251px;
+}
+.cafe_title {
+    width: 1320px;
+    font-family: 'Yeongdo';
+    font-weight: 700;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 110px;
+    text-align: center;
+}
+.cafe_title span {
+    color: #17479E;
+}
+.cafe_title::before {
+    content: "";
+    flex-grow: 1;
+    margin: 0 87px 0 0;
+    background-color: #17479E;
+    height: 3px;
+    font-size: 0;
+    line-height: 0;
+}
+.cafe_title::after {
+    content: "";
+    flex-grow: 1;
+    margin: 0 0 0 87px;
+    color: #17479E;
+    background-color: #17479E;
+    height: 3px;
+    font-size: 0;
+    line-height: 0;
+}
+.cafe_sub_title {
+    width: 1320px;
+    font-weight: 700;
+    font-size: 24px;
+    display: block;
+    align-items: center;
+    margin: 35px auto 85px;
+    text-align: center;
+}
+
+.cafe {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+.cafe_list01 {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.cafe_list02 {
+    width: 1320px;
+    margin: 85px auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cafe_button {
+    width: 348px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.cafe_button img {
+    position: absolute;
+    top: 0;
+    left: 480px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.cafe_button .hover-img {
+    opacity: 0;
+    /* 평소에는 숨김 */
+}
+/* --- 호버 인터랙션 정의 --- */
+/* 1. 마우스를 올리면 기본 이미지는 사라짐 */
+.cafe_button:hover .default-img {
+    opacity: 0;
+}
+
+/* 2. 마우스를 올리면 호버용 이미지가 나타남 */
+.cafe_button:hover .hover-img,
+.cafe_button.active .hover-img {
+    opacity:1
 }
 
 /* ------------------  footer  ---------------- */
