@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Y:ISLAND</title>
 
+    <!-- AOS연결 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- 웹폰트 연결 -->
     <!-- font-family: "Pretendard Variable", Pretendard, sans-serif; -->
     <link rel="stylesheet" as="style" crossorigin
@@ -239,7 +242,7 @@
             <div id="container1">
 
                 <h2 class="restaurant_title">영도 &nbsp;<span>맛집</span></h2>
-                <p class="restaurant_sub_title">영도에서 꼭 맛봐야 하는 음식점</p>
+                <p class="restaurant_sub_title" data-aos="zoom-out" data-aos-duration="1000">영도에서 꼭 맛봐야 하는 음식점</p>
 
                 <div class="restaurant_ch">
                     <img src="./image/submenu03/container1/요리사 영냥이.png" alt="요리사 영냥이">
@@ -272,7 +275,7 @@
             <!-- container2 -->
             <div id="container2">
                 <h2 class="hotel_title">영도 &nbsp;<span>숙소</span></h2>
-                <p class="hotel_sub_title">여행 스타일에 맞는 다향한 숙소를 만나보세요.</p>
+                <p class="hotel_sub_title" data-aos="zoom-out" data-aos-duration="1000">여행 스타일에 맞는 다향한 숙소를 만나보세요.</p>
 
                 <div class="hotel_ch">
                     <img src="./image/submenu03/container2/호텔 지배인 절영이.png" alt="호텔 지배인 절영이">
@@ -304,7 +307,7 @@
             <!-- container3 -->
             <div id="container3">
                 <h2 class="cafe_title">영도 &nbsp;<span>커피</span></h2>
-                <p class="cafe_sub_title">탁 트인 바다 뷰를 배경 삼아, 세계적인 수준의 커피를 맛보세요.</p>
+                <p class="cafe_sub_title" data-aos="zoom-out" data-aos-duration="1000">탁 트인 바다 뷰를 배경 삼아, 세계적인 수준의 커피를 맛보세요.</p>
                 
                 <div class="cafe_ch">
                     <img src="./image/submenu03/container3/바리스타 동백이.png" alt="바리스타 동백이">
@@ -391,6 +394,12 @@
         </div>
         <!-- footer -->
     </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

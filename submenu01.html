@@ -6,6 +6,9 @@
     <!-- 브라우저 뷰포트 너비를 1360px로 고정하여 페이지를 그리도록 설정 -->
     <title>Y:ISLAND</title>
 
+    <!-- AOS연결 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- 웹폰트 연결 -->
     <!-- font-family: "Pretendard Variable", Pretendard, sans-serif; -->
     <link rel="stylesheet" as="style" crossorigin
@@ -278,7 +281,7 @@
                     <img src="./image/submenu01/container3/동백이 사진촬영 1.png" alt="동백이">
                 </div>
 
-                <div class="root_img01">
+                <div class="root_img01" data-aos="fade-right" data-aos-duration="1000">
                     <img src="./image/submenu01/container3/힐링코스_사진01.png" alt="사진01">
                     <div class="rot_text">
                         <h2>흰여울문화마을</h2>
@@ -304,7 +307,7 @@
                     </div>
                 </div>
 
-                <div class="root_img02">
+                <div class="root_img02" data-aos="fade-left" data-aos-duration="1000">
                     <div class="rot_text">
                         <h2>영화「변호인」촬영지</h2>
                         <p class="icon">
@@ -326,7 +329,7 @@
                     <img src="./image/submenu01/container3/힐링코스_사진02.png" alt="사진2">
                 </div>
 
-                <div class="root_img03">
+                <div class="root_img03" data-aos="fade-right" data-aos-duration="1000">
                     <img src="./image/submenu01/container3/힐링코스_사진03.png" alt="사진03">
                     <div class="rot_text">
                         <h2>흰여울문화마을 포토존</h2>
@@ -348,7 +351,7 @@
                     </div>
                 </div>
 
-                <div class="root_img04">
+                <div class="root_img04" data-aos="fade-left" data-aos-duration="1000">
                     <div class="rot_text">
                         <h2>태종대</h2>
                         <p class="icon">
@@ -429,6 +432,12 @@
         </div>
         <!-- footer -->
     </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
